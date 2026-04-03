@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827; /* gray-900 */
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  /* Minimum 44px touch targets per design spec */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

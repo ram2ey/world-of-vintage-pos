@@ -1,0 +1,2 @@
+[config]
+command = npm install && npx prisma generate && npm run build --workspace=shared && npm run build --workspace=server
